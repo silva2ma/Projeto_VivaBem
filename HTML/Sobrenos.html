@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMAGENS/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/sobrenos.css">
+    <title>VivaBem | Sobre Nós</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 2rem 0;
+            color: #501854;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        .nav-link {
+            color: #501854;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #8a1a6b;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card img {
+            border-radius: 15px 15px 0 0;
+        }
+
+        footer {
+            background-color: #e9e6ff;
+    color: #000000;
+    padding: 20px 0;
+    width: 100%;
+        }
+
+        .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+ 
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: un derline;
+  }
+  
+  .logo-center img {
+    max-width: 150px;
+    height: auto;
+
+        .footer-section {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+      }
+          
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+  
+    .footer-section {
+        margin: 10px 0;
+    }
+  
+    .logo-center {
+        order: -1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+  
+    .footer-section {
+        margin: 10px 0;
+    }
+  
+    .logo-center {
+        order: -1;
+    }
+  }
+  
+  
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-number {
+    width: 35px;
+    height: 35px;
+    background: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+}
+:root {
+      --cor-principal: #290952;
+      --cor-secundaria: rgb(179, 156, 243);
+      --cor-cinza: #000000;
+  }
+
+  
+  nav ol {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+  }
+  
+  nav ol li {
+      display: inline;
+  }
+  
+  nav ol li::after {
+      content: '/';
+      margin-right: 10px;
+      font-size:.8em;
+      color: var(--cor-cinza);
+  }
+  
+  nav ol li:last-child::after {
+      content: '';
+      color: var(--cor-cinza);
+  }
+  
+  nav ol li a {
+      color: var(--cor-principal);
+      text-decoration: none;
+      margin-right: 10px;
+  }
+  
+  nav ol li a:hover {
+      color: var(--cor-secundaria);
+      text-decoration: underline;
+  }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="bg text-dark text-center">
+        <div class="container">
+            <img src="../IMAGENS/foto_grupo1.png" class="img-fluid" alt="">
+            <h2 style="font-size: 4vh;">Projeto VivaBem</h2>
+            <h1 style="font-size: 12vh;">Sobre Nós</h1>
+        </div>
+    </header>
+
+    <br>
+    <nav>
+        <ol style="font-size: 20px; text-align: left; margin-left: 90px;">
+            <li>
+                <a href="../HTML/Home.html">Home</a>
+            </li>
+            <li>
+                Projetos
+            </li>
+        </ol>
+    </nav>
+<br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#HISTORIA">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#OPROJETO">Sobre o projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MV">Missão e valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MEMBROS">Membros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+      
+
+        <!-- História -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/8.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Nossa História </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">Somos cinco estudantes do Técnico de Informática para Internet da Escola Estadual Etec Lauro Gomes. 
+                        Ao chegar no último ano, criamos o projeto “VivaBem” como parte do nosso Trabalho de Conclusão de Curso. 
+                        Nosso objetivo é oferecer suporte e atividades para a terceira idade por meio de um site e um aplicativo, facilitando a interação social e
+                         promovendo um estilo de vida saudável. Estamos dedicados a fazer a diferença e a contribuir para uma comunidade mais inclusiva e bem-informada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre o Projeto -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="heading" id="OPROJETO"> <strong> Sobre o Projeto </strong> </h2>
+                    <p style="text-align:justify; font-size: 23px;">Este projeto foi desenvolvido para promover <strong>o bem-estar e o entretenimento dos idosos</strong>, 
+                        especialmente para aqueles que não participam de atividades físicas ou mentais, que carecem de convívio social e não têm familiares próximos.
+                         Nosso objetivo é oferecer uma série de <strong>atividades e eventos destinados</strong> à terceira idade, permitindo que eles interajam, 
+                         socializem e vivam de forma mais leve e saudável.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 img-section order-1 order-lg-2 wow fadeInRigh" >
+                    <img src="../IMAGENS/4.png" class="img-fluid rounded"  style="margin-left: 30%;" alt="Sobre o Projeto">
+                </div>
+            </div>
+        </section>
+
+<br><br>
+
+
+
+        <!-- Missão e Valores -->
+        <section class="mb-5">
+            <h2 class="heading" id="MV"> <strong> Missão e Valores </strong> </h2> <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card p-3" style="border-width: 6px; border-style: solid; text-align: justify;
+                    border-image: linear-gradient(45deg, #32357a, #e9e6ff) 1; /* Gradiente e direção */
+                    padding: 10px; /* Espaçamento interno */ border-radius: 15px; /* Bordas arredondadas */background-color: white; /* Cor de fundo do cartão */">
+                        <h3>Missão</h3>
+                        <img width="49" height="49" src="https://img.icons8.com/ios/50/goal--v1.png" 
+                        alt="goal--v1" class="mx-auto d-block"/> <br>
+                        <p style="font-size: 23px;">A nossa missão no projeto VivaBem é a valorização do idoso. 
+                            Buscamos criar um <strong>ambiente acolhedor</strong>, 
+                            oferecendo atividades e eventos que celebrem sua sabedoria e
+                             proporcionem oportunidades para uma vida ativa e gratificante.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-3" style="border-width: 6px; border-style: solid; text-align: justify;
+                    border-image: linear-gradient(45deg, #e9e6ff, #32357a) 1; /* Gradiente e direção */
+                    padding: 10px; /* Espaçamento interno */ border-radius: 15px; /* Bordas arredondadas */background-color: white; /* Cor de fundo do cartão */">
+                        <h3>Valores</h3>
+                        <img width="55" height="55" src="https://img.icons8.com/dotty/80/idea-sharing.png"
+                        alt="idea-sharing" class="mx-auto d-block"/> <br>
+                        <p style="font-size: 23px;">Valorizamos a <strong>integração e a participação social</strong> 
+                            dos idosos, promovendo um ambiente de respeito e inclusão. 
+                            Buscamos oferecer suporte emocional, oportunidades de crescimento e um senso de pertencimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEMBROS -->
+        <div class="container mt-3">
+          <h2 class="heading" id="MEMBROS"> <strong> Membros</strong> </h2> <br>
+
+          <div style=" border-radius: 60px; border: solid;" class="container p-5 my-5  border border-1 border-dashed text-justify">
+             <p style="font-size: 23px; text-align: justify;">
+                Cada membro da equipe desempenha um <strong>papel fundamental</strong> para o sucesso do Projeto VivaBem.<br> 
+                Nossa equipe de liderança é composta por <strong> cinco estudantes </strong>da região metropolitana de São Paulo,
+                especificamente de São Bernardo do Campo, e reúne uma combinação de <strong>habilidades técnicas e 
+                    interpessoais </strong>que promovem a integração em nossa jornada.
+                O foco do VivaBem é promover a saúde e o bem-estar dos idosos, portanto
+            para o desenvolvimento do Projeto conheça os integrantes da nossa equipe:  </p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.854 14.854a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V3.5A2.5 2.5 0 0 1 6.5 1h8a.5.5 0 0 1 0 1h-8A1.5 1.5 0 0 0 5 3.5v9.793l3.146-3.147a.5.5 0 0 1 .708.708z"/>
+              </svg> <br>
+          </p>
+          </div>
+
+
+          <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/ale.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Alexandre Fonseca </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">    
+                        Sou estudante com 3 anos de experiência no curso técnico de desenvolvimento web e mobile.<br>
+                        Atualmente, atuo no projeto VivaBem como <strong>Auxiliar de documentação</strong> que
+                        implementa sistemas de arquivamento e programas de gerenciamento de registros eletrônicos
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6" style="font-size: 23px;">
+                            <strong>Habilidades:</strong>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <p>Visio</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <p>Word</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6" >
+                            <strong style="font-size: 23px;">Contato:</strong> <br>
+                            <div class="contact-info">
+                                <strong>Cel:</strong> (11) 93348-3468 <br><strong> E-mail: </strong> alef210107@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/ju silva.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Julia Silva </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">    
+                        Sou estudante com 3 anos de experiência no curso técnico de desenvolvimento web e mobile.<br>
+                        Atualmente, atuo no projeto VivaBem como <strong>Analista de documentação</strong> visando gerenciar, organizar e analisar relatórios
+                        e registros
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"  style="font-size: 23px;">
+                            <strong>Habilidades:</strong>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <p>Pacote Office</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <strong  style="font-size: 23px;">Contato:</strong> <br>
+                            <div class="contact-info">
+                                <strong> Cel: </strong> (11) 94302-0934 <br> <strong> E-mail:</strong> juliasilvapaj@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/ju.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Juliana Ortega </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">    
+                        Sou estudante com 3 anos de experiência no curso técnico de desenvolvimento web e mobile.<br>
+                        Atualmente, atuo no projeto VivaBem como <strong>Desenvolvedora Mobile</strong> e arquiteto a programação
+                         interativa do aplicativo
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"  style="font-size: 23px;">
+                            <strong>Habilidades:</strong>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <p>C#</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <strong  style="font-size: 23px;">Contato:</strong> <br>
+                            <div class="contact-info">
+                                <strong> Cel: </strong>  (11) 98453-3023 <br>  <strong> E-mail:</strong> juju.ortega07@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <hr>
+
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/marcella.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Marcella Rodrigues </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">    
+                        Sou estudante com 3 anos de experiência no curso técnico de desenvolvimento web e mobile.<br>
+                        Atualmente, atuo no projeto VivaBem como <strong>Desenvolvedora web</strong> focado em <strong>UX Designer</strong> estruturando a programação visual
+                        e interativa web
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"  style="font-size: 23px;">
+                            <strong>Habilidades:</strong>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <p>Photoshop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <strong  style="font-size: 23px;">Contato:</strong> <br>
+                            <div class="contact-info">
+                                <strong> Cel: </strong> (11) 94959-6410 <br> <strong> E-mail:</strong> ma.rodriguessilva1996@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<hr>
+
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../IMAGENS/miguel.png" class="img-fluid rounded" alt="Nossa História">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="heading" id="HISTORIA"> <strong> Miguel Fabiani </strong> </h2>
+                    <p style="text-align: justify; font-size: 23px;">    
+                        Sou estudante com 3 anos de experiência no curso técnico de desenvolvimento web e mobile.<br>
+            Atualmente, atuo no projeto VivaBem como <strong>Coordenador e Analista de dados</strong> focado em conduzir o projeto
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6"  style="font-size: 23px;">
+                            <strong>Habilidades:</strong>
+                            <div class="steps">
+                                <div class="step">
+                                    <div class="step-number">1</div>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">2</div>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="step">
+                                    <div class="step-number">3</div>
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <strong  style="font-size: 23px;">Contato:</strong> <br>
+                            <div class="contact-info">
+                              <strong> Cel: </strong>  (11) 94959-6410 <br>  <strong> E-mail:</strong> miguelfabiani150@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   <footer>
+        <div class="footer-container" >
+         
+          <div class="footer-section">
+            <p><strong> Sobre a VivaBem </strong> <br> Plataforma online para o entretenimento da população idosa
+        </div>
+            <div class="footer-section">
+              <p>&copy; VivaBem | 2024</p>
+          </div>
+      
+            <div class="footer-section">
+                <p><strong> Contato </strong> <BR> Email : VivaBem@gmail.com <br> Cel: (11) 9999-9999</p>
+            </div>
+        </div>
+      </footer>
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

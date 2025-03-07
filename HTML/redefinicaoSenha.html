@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="../IMAGENS/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/cadL_esqcsenha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Redefinição de senha</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+      
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      body{
+          background-color: #c9d6ff;
+          background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100vh;
+      }
+      
+      
+      
+      
+      .conteudo-p{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+      }
+      
+      .conteudo-p-img{
+          height: 400px;
+      }
+      
+      
+      
+      .img{
+      height: 430px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      
+      }
+      
+      .container{
+          background-color: #fff;
+          border-radius: 30px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+          position: relative;
+          overflow: hidden;
+          width: 798px;
+          max-width: 100%;
+          min-height: 480px;
+      }
+      
+      .container p{
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+          margin: 20px 0;
+      }
+      
+      .container span{
+          font-size: 12px;
+      }
+      
+      .container a{
+          
+          color: #333;
+          font-size: 13px;
+          text-decoration: none;
+          margin: 15px 0 10px;
+          
+      }
+      
+      .container button{
+         border-color: #333;
+          color: #512da8;
+          font-size: 14px;
+          padding: 10px 90px;
+          border: 1px solid transparent;
+          border-radius: 8px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          margin-top: 10px;
+          cursor: pointer;
+      }
+      
+      .container button.hidden{
+          background-color: transparent;
+          border-color: #fff;
+      }
+      
+      .container form{
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 40px;
+          height: 100%;
+      }
+      
+      .container input{
+          background-color: #eee;
+          border: none;
+          margin: 8px 0;
+          padding: 10px 15px;
+          font-size: 13px;
+          border-radius: 8px;
+          width: 100%;
+          outline: none;
+      }
+      
+      .form-container {
+          position: absolute;
+          top: 0;
+          width: 50%;
+          height: 100%;
+          transition: all 0.6s ease-in-out;
+        }
+        
+        .sign-in {
+          left: 0;
+        }
+        
+        .sign-up {
+          right: -100%; /* Initially off-screen to the right */
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 50%; /* Take up half of the container */
+          height: 100%;
+          transition: all 0.6s ease-in-out;
+      }
+      
+      
+        
+        /* Toggle Animation */
+      .container.active .sign-in {
+          transform: translateX(-100%);
+      }
+      
+      
+      .container.active .sign-up {
+          right: 0; /* Bring the sign-up form into view from the right */
+          opacity: 1;
+      }
+        
+      
+      @keyframes move{
+          0%, 49.99%{
+              opacity: 0;
+              z-index: 1;
+          }
+          50%, 100%{
+              opacity: 1;
+              z-index: 5;
+          }
+      }
+      
+      .toggle-container{
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 50%;
+          height: 100%;
+          overflow: hidden;
+          transition: all 0.6s ease-in-out;
+          border-radius: 150px 0 0 100px;
+          z-index: 1000;
+      }
+      
+      .container.active .toggle-container{
+          transform: translateX(-100%);
+          border-radius: 0 150px 100px 0;
+      }
+      
+      .toggle{
+          background-color: #512da8;
+          height: 100%;
+          background: linear-gradient(to right, #5c6bc0, #512da8);
+          color: #fff;
+          position: relative;
+          left: -100%;
+          height: 100%;
+          width: 200%;
+          transform: translateX(0);
+          transition: all 0.6s ease-in-out;
+      }
+      
+      .container.active .toggle{
+          transform: translateX(50%);
+      }
+      
+      .toggle-panel{
+          position: absolute;
+          width: 50%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 30px;
+          text-align: center;
+          top: 0;
+          transform: translateX(0);
+          transition: all 0.6s ease-in-out;
+      }
+      
+      .toggle-left{
+          transform: translateX(-200%);
+      }
+      
+      .container.active .toggle-left{
+          transform: translateX(0);
+      }
+      
+      .toggle-right{
+          right: 0;
+          transform: translateX(0);
+      }
+      
+      .container.active .toggle-right{
+          transform: translateX(200%);
+      }
+      
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espaço para o ícone */
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container i {
+    position: absolute;
+    right: 10px; /* Alinhado à direita */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-container1 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container1 input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espaço para o ícone */
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container1 i {
+    position: absolute;
+    right: 10px; /* Alinhado à direita */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+      </style>
+      
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-in">
+            <main class="conteudo">
+                <section class="conteudo-p">
+                    <img src="../IMAGENS/senha.png" style="margin: 3em 20px;" class="float-start">
+                    <form action="https://vivabem.serv00.net/projeto/site/reformular.php" method="post">
+                        <h1 style="text-align: center; box-shadow: black;">Redefinição de senha</h1><br>
+                        <div class="input-container">
+                        <input type="password" name="senha" placeholder="Digite a nova senha" id="senha">
+                        <i class="bi-eye-slash-fill toggle-icon" id="btn-senha" onclick="togglePassword('senha', this)"></i> </div>
+                        <div class="input-container1">
+                        <input type="password" name="senha2" placeholder="Confirme a nova senha" id="senha2">
+                        <i class="bi-eye-slash-fill toggle-icon" id="btn-senha" onclick="togglePassword('senha2', this)"></i> </div>
+                        <button type="submit">Reformular</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+         // Função para alternar visibilidade da senha
+  function togglePassword(inputId, icon) {
+    const input = document.getElementById(inputId);
+    const type = input.type === "password" ? "text" : "password";
+    input.type = type;
+    
+    icon.classList.toggle("bi-eye");
+    icon.classList.toggle("bi-eye-slash-fill");
+  }
+    </script>
+</body>
+</html>

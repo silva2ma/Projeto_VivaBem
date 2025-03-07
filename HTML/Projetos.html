@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../IMAGENS/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/projetos.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="sweetalert2.min.css">
+
+    
+        <title> VivaBem | Nossos projetos</title>
+
+  </head>
+
+  <body style="    background-color: #ffffff ;   font-family:  'Gill Sans MT';">
+    <!-- <script> const params = new URLSearchParams(window.location.search);
+    if (params.get('voluntario') === 'true') {
+        alert("Você está utilizando a aba 'Projetos' como voluntário")};</script>   -->
+
+    <body> <!-- Inicio do corpo da página -->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </body> <!-- Fim do corpo da página -->
+
+<style>
+  .fundo {
+    position: relative; /* Permite que a sobreposição seja posicionada em relação a este contêiner */
+    width: 100%;
+    max-height: 790px; /* Altura máxima da imagem */
+    overflow: hidden; /* Para evitar que o conteúdo exceda o contêiner */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    /* Ajusta a imagem para cobrir o contêiner sem distorcer */
+}
+
+.sobreposicao {
+    position: absolute; /* Permite que o texto seja posicionado sobre a imagem */
+    top: 50%; /* Centraliza verticalmente */
+    left: 10px; /* Ajusta a distância do texto da borda esquerda da imagem */
+    transform: translateY(-50%); /* Ajusta a posição para centralizar verticalmente */
+    color: #ffffff; /* Cor do texto */
+    font-size: 5vw; /* Tamanho do texto responsivo */
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px; /* Limita a largura do texto para melhor aparência */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+}
+
+</style>
+
+
+    <div class="fundo">
+      <img class="img-fluid" src="../IMAGENS/projeto1.jpg" alt="">
+      <div class="sobreposicao">
+          Projetos
+      </div>
+  </div>
+  
+     
+  
+  <!-- breadcrumbs
+      Em tradução livre, breadcrumbs significa migalhas de pão.
+      Em âmbito digital, é o sistema de navegação por categorias existente dentro de um site.
+      O que facilita a navegação do usuário e indica o caminho que percorre dentro de sua estrutura.
+      “navegação estrutural”
+   -->
+  <br>
+      <nav>
+          <ol style="font-size: 20px; text-align: left; margin-left: 20px;">
+              <li>
+               <a href="https://vivabem.serv00.net/HTML/Home.php">Home</a>
+              </li>
+              <li>
+                <a>  Projetos </a>
+              </li>
+          </ol>
+      </nav>
+<br>
+     
+<!--           <a href="https://vivabem.serv00.net/HTML/favs.php">  Projetos Favoritos </a> -->
+
+<style>
+  .nav-item{ font-size: 19px; padding: 8px 20px; }
+
+ .nav-link{ color: rgb(0, 0, 0); font-weight: 500; position: relative;}
+ 
+ .nav-link:hover, .nav-link.active{color: black;}
+ 
+ @media(min-width:991px){ .nav-link::before{content: "";
+ position: absolute; bottom: 0;left:50%;transform: translateX(-50%);width: 0;height: 2px;background-color: rgb(75, 5, 141);
+ visibility: hidden;transition: 0.3s ease-in-out ;
+ }
+ .nav-link:hover::before, .nav-link.active::before  {visibility: visible ;width: 100%;}}
+
+ 
+</style>
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+  
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+    
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <i class="fi fi-tr-angle-small-right"></i>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Encontros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Assistência</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Saúde e bem-estar</a>
+          </li>
+        </ul>
+    </div>
+     </div>
+</nav>
+
+<body>
+  <style>
+      :root {
+      --cor-principal: #290952;
+      --cor-secundaria: rgb(179, 156, 243);
+      --cor-cinza: #000000;
+  }
+  
+  nav {
+      width: 100%;
+  }
+  
+  nav ol {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+  }
+  
+  nav ol li {
+      display: inline;
+  }
+  
+  nav ol li::after {
+      content: '/';
+      margin-right: 10px;
+      font-size:.8em;
+      color: var(--cor-cinza);
+  }
+  
+  nav ol li:last-child::after {
+      content: '';
+      color: var(--cor-cinza);
+  }
+  
+  nav ol li a {
+      color: var(--cor-principal);
+      text-decoration: none;
+      margin-right: 10px;
+  }
+  
+  nav ol li a:hover {
+      color: var(--cor-secundaria);
+      text-decoration: underline;
+  }
+  </style>
+
+
+<div class="container mt-3">
+  <div class="mt-4 p-5 bg-primary text-white rounded"  style="background-image: linear-gradient(45deg, #722277 0%, #290952 100%); margin: 1em;">
+    <h3>Criar iniciativas para idosos é um reconhecimento da importância de cada etapa da vida e um compromisso com
+      a qualidade de vida em todas as idades</h3>
+  </div>
+</div>
+
+
+<style>
+  .blog-slider__button {
+  display: inline-flex;
+  border: 1px solid #000000;
+  padding: 15px 35px;
+  border-radius: 15px;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin: 1em;
+  margin-left: 7%;
+}
+@media screen and (max-width: 576px) {
+  .blog-slider__button {
+    width: 10%;
+ }
+}
+</style>
+
+<a href="#" id="meuBotao" class="blog-slider__button">Quero ser voluntário</a>
+
+<script>
+  document.getElementById('meuBotao').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Quer ajudar nas atividades? Então seja Voluntário:',
+                text: 'Faça cadastro ou entre com sua conta voluntário',
+                icon: 'warning',
+                showCancelButton: true, // Mostra o botão de cancelar
+        confirmButtonText: 'Cadastrar/Entrar',
+        cancelButtonText: 'Voltar' // Texto do botão de voltar
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redireciona para outra página
+                    window.location.href = '../HTML/voluntario (1).html'; // Altere para o URL desejado
+                }
+                else if (result.isDismissed) {
+            // Volta para a página anterior
+            window.history.back();
+        }
+    });
+});
+</script>
+
+  <p >
+        <body>
+          <style>
+            .caixa {
+                display: flex;
+                align-items: center;
+                margin: 1em;
+                flex-wrap: wrap;
+            }
+            .imagem, .texto {
+                border-radius: 20px;
+                width: 100%;
+                max-width: 750px;
+                margin: 1em;
+            }
+            .texto {
+                background-color: rgb(242, 242, 242);
+                overflow-wrap: break-word;
+                text-align: justify;
+                padding: 10px;
+                font-size: 17px;
+            }
+    
+            @media (min-width: 768px) {
+                .container {
+                    flex-direction: row;
+                }
+                .imagem, .texto {
+                    width: 45%;
+                }
+            }
+            .button-container {
+    display: flex;
+}
+.button-container button {
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+.button-container button:last-child {
+    margin-right: 0; /* Remove a margem do último botão */
+}
+
+
+            .btn {
+                background: #fff;
+                border: 2px solid #c6bbc7;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 22px;
+                transition: 0.3s;
+            }
+            .btn:hover {
+                background: #e0e0e0;
+                transform: scale(1.1);
+            }
+            .favoritado {
+                border-color: #ebd4ff;
+                background: #ebd4ff;
+                color: #fff;
+            }
+            .favoritado:hover {
+                background: #ebd4ff;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+                <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                    <small class="text-uppercase ls-md fw-semibold" style="color: #ae61b3;" id="encontros">ENCONTROS</small>
+                    <h1 class="my-3">Entre laços</h1>
+                    <p style="font-size: 21px;">O Projeto "Entre Laços" é uma iniciativa voltada para enriquecer a vida dos idosos através de atividades sociais e culturais especialmente planejadas para estimular o bem-estar e promover a interação entre os participantes. Com uma abordagem diversificada, nosso projeto oferece um ambiente acolhedor e animado com Bailes da Terceira Idade, Rodas de Conversa, Tarde de Jogos e Workshops. <br><strong>Veja mais logo abaixo:</strong></p>
+                    <br>
+                </div>
+    
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Bailes da Terceira Idade</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/bailes.jpg" class="imagem" alt="Bailes da Terceira Idade">
+                    <p class="texto">
+                        <strong>OBJETIVO:</strong> Dance, socialize e sorria! Os Bailes da Terceira Idade são a oportunidade perfeita para se soltar e aproveitar a vida ao máximo<br>  <br>
+                        <strong>DURAÇÃO:</strong> Toda sexta-feira, das 19h às 22h<br> <br>
+                        <strong>FORMATO:</strong> Imagine uma pista de dança iluminada e cheia de energia, onde cada música é escolhida para fazer você dançar. Venha participar dessa atividade e aprimore a relação com outras pessoas<br>  <br>
+                        <strong>LOCAL:</strong> Presencial <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */
+                    }
+                }
+                " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn" style="font-size: 20px; cursor: pointer;" onclick="favoritar('Bailes da Terceira Idade', this)" id="iconHeart">🤍</button>
+                      </p> </div>
+                      
+    
+                <hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+    
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Roda de Conversa</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/rodasdeconverssa.jpg" class="imagem" alt="Roda de Conversa">
+                    <p class="texto">
+                      <strong>OBJETIVO:</strong> Promover o bem-estar emocional e social dos idosos por meio de encontros semanais que incentivem a interação, o compartilhamento de experiências e o fortalecimento de vínculos<br>  <br>
+                      <strong>DURAÇÃO:</strong>  6 meses, com encontros semanais de 1 a 2 horas<br>  <br>
+                        <strong>FORMATO:</strong> As rodas de conversa semanais para idosos, moderadas por um facilitador, em um ambiente acolhedor estabelece o desenvolvimento de comunicação<br>  <br>
+                        <strong>LOCAL:</strong>  Presencial e Online <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */}}
+                        " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn" style="font-size: 20px; cursor: pointer;" onclick="favoritar('Roda de Conversa', this)" id="iconHeart2">🤍</button></p>
+                </div>
+
+    
+                <hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+    
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Tarde de Jogos</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/jogos.jpg" class="imagem" alt="Tarde de Jogos">
+                    <p class="texto">
+                      <strong>OBJETIVO:</strong> Oferecer um espaço para socialização e estimulação cognitiva através de atividades lúdicas <br>  <br>
+                      <strong>DURAÇÃO:</strong>  6 meses, com encontros semanais de 2 horas <br>  <br>
+                        <strong>FORMATO:</strong> Atividade que organiza tardes semanais dedicadas a jogos para idosos<br>  <br>
+                        <strong>LOCAL:</strong> Presencial
+                        <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */
+                    }
+                }
+                " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn" style="font-size: 20px; cursor: pointer;" onclick="favoritar('Tarde de Jogos', this)" id="iconHeart3">🤍</button></p>
+                             
+                </div>
+    
+                <hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+    
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Palestras e Workshops</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/work.jpg" class="imagem" alt="Palestras e Workshops">
+                    <p class="texto">
+                      <strong>OBJETIVO:</strong> Promover o desenvolvimento pessoal e a exploração de novos interesses através de workshops<br>  <br>
+                      <strong>DURAÇÃO:</strong>  6 meses, com encontros semanais de 2 a 3 horas<br>  <br>
+                        <strong>FORMATO:</strong>Atividade que organiza workshops semanais para idosos<br>  <br>
+                        <strong>LOCAL:</strong>  Presencial e online <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */
+                    }
+                }
+                " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn"  style="font-size: 20px; cursor: pointer;" onclick="favoritar('Palestras e Workshops', this)" id="iconHeart4">🤍</button></p>
+                </div>
+    
+                <hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+                <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                  <small class="text-uppercase ls-md fw-semibold" style="color: #ae61b3;" id="encontros">Assistência</small>
+                  <h1 class="my-3">Conecte-se</h1>
+                  <p style="font-size: 21px;">O Projeto "Conecte-se" é uma iniciativa voltada para promover a inclusão tecnológica.
+                     Através de atividades práticas e de aprendizado, disponibilizando suporte técnico personalizado para ajudar os idosos a utilizarem seus dispositivos,  garantindo que se sintam mais seguros e conectados ao mundo digital.
+                     <br><strong>Veja mais logo abaixo:</strong></p>
+                  <br>
+              </div>
+
+    
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Assistência Tecnológica</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/assistencia.jpg" class="imagem" alt="Assistência Tecnológica">
+                    <p class="texto">
+                      <strong>OBJETIVO:</strong> Oferecer suporte e treinamento em tecnologia para idosos, além de promover a autonomia digital, proporcionando uma melhor qualidade de vida aos participantes<br>  <br>
+                      <strong>DURAÇÃO:</strong>  6 meses, com sessões semanais de 1 a 2 horas<br>  <br>
+                        <strong>FORMATO:</strong> Contribui a assistência tecnológica personalizada com dinâmicas em grupos para idosos<br>  <br>
+                        <strong>LOCAL:</strong>  Presencial <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */
+                    }
+                }
+                " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn"  style="font-size: 20px; cursor: pointer;" onclick="favoritar('Assistência Tecnológica', this)" id="iconHeart5">🤍</button></p>
+                </div>
+    
+                <hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+                <div class="text-center mb-xl-7 mb-5" data-cue="fadeIn">
+                  <small class="text-uppercase ls-md fw-semibold" style="color: #ae61b3;" id="encontros">SAÚDE E BEM-ESTAR</small>
+                  <h1 class="my-3">Energize+</h1>
+                  <p style="font-size: 21px;">O Projeto "Energize+" é uma iniciativa voltada para enriquecer a vida dos idosos através de atividades sociais e culturais especialmente planejadas para estimular o bem-estar e promover a interação entre os participantes. Com uma abordagem diversificada, nosso projeto oferece um ambiente acolhedor e animado com Bailes da Terceira Idade, Rodas de Conversa, Tarde de Jogos e Workshops. <br><strong>Veja mais logo abaixo:</strong></p>
+                  <br>
+              </div>
+                <h4 class="my-3" style="text-align: left; margin-left: 20px;">Caminhadas Matinais e Dicas de Exercício</h4>
+                <div class="caixa">
+                    <img src="../IMAGENS/exercicio.jpg" class="imagem" alt="Caminhadas Matinais">
+                    <p class="texto">
+                      <strong>OBJETIVO:</strong> Incentivar a prática regular de caminhadas matinais entre idosos <br>  <br>
+                      <strong>DURAÇÃO:</strong> 6 meses, com caminhadas guiadas três vezes por semana<br>  <br>
+                        <strong>FORMATO:</strong>Atividade que organiza caminhadas em grupo para idosos<br>  <br>
+                        <strong>LOCAL:</strong>  Presencial- Parque 1, Parque 2, Parque 3 <br><br>
+                        <a class="btn btn-outline" style="  width: 105px;
+                        height: 42px;
+                        cursor: pointer;
+                        color: #fff;
+                        font-size: 17px;
+                        border-radius: 15px;
+                        border: none;
+                        position: relative;
+                        background-image: linear-gradient(45deg, #722277 0%, #290952 100%);
+                        transition: 0.1s;
+                   @media (max-width: 768px) {
+                    .container {
+                        justify-content: flex-start; /* Move o botão para o lado esquerdo */
+                    }
+                }
+                " href="../HTML/InscriçãoProjP.php">Inscrever-se</a> <br>
+                        <button class="btn favoritoBtn"  style="font-size: 20px; cursor: pointer;" onclick="favoritar('Caminhadas Matinais e Dicas de Exercício', this)" id="iconHeart3">🤍</button> </p>
+                
+                </div>
+               
+    
+                <script>
+                    let lastFavoritedButton = null; // Armazena o último botão favoritado
+                
+                    function favoritar(categoria, button) {
+                        // Se um botão já estiver favoritado, desmarque-o
+                        if (lastFavoritedButton && lastFavoritedButton !== button) {
+                            lastFavoritedButton.textContent = '🤍'; // Resetando o texto do último botão
+                        }
+                
+                        // Alterna o texto do botão
+                        if (button.textContent === '🤍') {
+                            button.textContent = '💜'; // Altera para o texto favoritado
+                            lastFavoritedButton = button; // Atualiza o último botão favoritado
+                        } else {
+                            button.textContent = '🤍'; // Reseta para o estado não favoritado
+                            lastFavoritedButton = null; // Reseta quando desfavoritar
+                        }
+                
+                        // Envia a categoria e o estado do favorito ao PHP via AJAX
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "https://vivabem.serv00.net/projeto/site/favoritar.php", true);
+                        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                        xhr.onreadystatechange = function() {
+                            if (xhr.readyState == 4 && xhr.status == 200) {
+                                // Aqui você deve fazer o parsing da resposta
+                                const response = JSON.parse(xhr.responseText); // Parse a resposta
+                                console.log(response); // Exibe a resposta do PHP no console
+                
+                                // Verifica o status da resposta
+                                if (response.status === "success") {
+    Swal.fire({
+        text: response.message,
+        timer: 1500,
+        color: '#722277',
+        showConfirmButton: true,
+        confirmButtonText: 'Ver Favoritos💜', // Personalizando o texto do botão
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Redireciona para a página de favoritos quando o botão for clicado
+            window.location.href = 'https://vivabem.serv00.net/HTML/favs.php'; // Substitua '/favoritos' pela URL da sua página de favoritos
+        }
+    });
+} else {
+    Swal.fire({
+        text: response.message,
+        color: '#722277',
+        icon: 'error',
+    });
+}
+
+                            }
+                        };
+                        // Envia a categoria e o estado do favorito
+                        xhr.send("categoria=" + encodeURIComponent(categoria) + "&favoritado=" + (button.textContent === '💜'));
+                    }
+                </script>
+                
+            </div>
+        </div>
+<hr style="border: 0; height: 1px; background-color: #ccc; margin: 20px 0;">
+
+<hr>
+<style>
+  footer {
+    background-color: #e9e6ff;
+    color: #000000;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+</style>
+
+
+<footer>
+  <div class="footer-container" >
+   
+    <div class="footer-section">
+      <p><strong> Sobre a VivaBem </strong> <br> Plataforma online para o entretenimento da população idosa
+  </div>
+      <div class="footer-section">
+        <p>&copy; VivaBem | 2024</p>
+    </div>
+
+      <div class="footer-section">
+          <p><strong> Contato </strong> <BR> Email : VivaBem@gmail.com <br> Cel: (11) 9999-9999</p>
+      </div>
+  </div>
+</footer>
+    
+  </body>
+</html>

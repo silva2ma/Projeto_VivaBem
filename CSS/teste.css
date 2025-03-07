@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+*{
+  margin: 0 auto;
+
+box-sizing: border-box;
+font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.conteudo{
+	border-top: 0.1px solid #330b53;;
+	margin-bottom: 48px;
+}
+
+.conteudo-p{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.conteudo-p-escrito{
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.conteudo-p-escrito-titulo{
+  font-family: 'Times New Roman', Times, serif;
+ font-display: 4;
+		font-optical-sizing: auto;
+		font-weight: 900;
+		font-size: 150px;
+		color: #330b53;
+    right: 9px;
+    text-align: justify;
+}
+
+.conteudo-p-escrito-sub{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-weight: 400;
+		font-size: 24px;
+		color: #020202;
+    text-align: justify;
+}
+
+.conteudo-p-img{
+		height: 430px;
+}
+
+
+
+.img{
+  height: 430px;
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+ 
+}
+
+
+section details summary{
+ background-color: #b284f6;
+ padding: 2%;
+ border-bottom: 2px solid #282828;
+ color: #fff;
+ font-weight: 600;
+}
+
+section details p{
+  background-color: rgb(42, 1, 63);
+  padding: 2%;
+  color: #fff;
+  font-weight: 600;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+}
+
+
+body{
+background-color: #f1f4fb;
+background: linear-gradient(to LEFT, #b6a3f0, #ffffff);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  
+}
+
+
+.sect{
+  padding: 90px 0;
+  position: relative;
+}
+
+
+.collapse{
+ display: block;
+}
+
+.sect--grey{
+  
+}
+
+.sect--violet{
+  background-color:#6f79ff;
+}
+
+.sect--padding-bottom{
+  padding-bottom:115px;
+}
+
+.sect--padding-top{
+  padding-top:90px;
+}
+
+.sect--white{
+
+}
+.row--center{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.row--margin{
+  margin-top:45px;
+}
+
+.row__title{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 0px;
+}
+
+.row__sub{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px; 
+  color: #8198ae;
+}
+
+.price-box{
+  padding: 0px 25px;  
+}
+
+.price-box__wrap{
+  background-color: #fff;
+  border-radius:6px;
+  padding: 35px 35px 40px 35px;
+  text-align:center;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.price-box__img{
+  display: inline-block;
+}
+
+.price-box__img{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  background-position: center;
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+
+.price-box--purple .price-box__img{
+  background-image: url("https://images.template.net/278151/Industrial-Aesthetic-Header-edit-online.jpg");
+
+}
+
+.price-box__title{
+  font-size:22px;
+  letter-spacing:1px;
+  margin-bottom:4px;
+}
+
+.price-box__people{
+  font-size:12px;
+  color:#8198ae;
+  font-weight: 300;
+  letter-spacing:1px;
+}
+.price-box__discount{
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.price-box__dollar {
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: top;
+    margin-right: 4px;
+}
+
+.price-box--purple .price-box__dollar{
+  color: #000000;
+}
+
+.price-box--violet .price-box__dollar{
+  color: #000000;
+}
+
+.price-box--blue .price-box__dollar{
+  color: #000000;
+}
+
+.price-box__discount--light{
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.price-box__price {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #8198ae;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.price-box__feat {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.price-box__list {
+    text-align: left;
+    padding-left: 30px;
+    margin: 0;
+    list-style: none;
+}
+
+.price-box__list-el{
+  position: relative;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.price-box__list-el:before{
+  content: "✓";
+  position: absolute;
+  left: -25px;
+  font-size: 18px;
+  top: -4px;
+}
+
+.price-box--purple .price-box__list-el:before{
+  color: #8a3aff;
+}
+
+.price-box--violet .price-box__list-el:before{
+  color: #6f79ff;
+}
+
+.price-box--blue .price-box__list-el:before{
+  color: #3a9fff;
+}
+
+.price-box__wrap:hover {
+  backface-visibility: hidden;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+}
+
+.btn{
+  background-color:#3a9fff;
+  border-radius: 20px;
+  padding: 10px 25px;
+  color: #fff;
+  box-shadow: 0px 18px 13px -6px rgba(0, 0, 0,0.2);
+  transition: all 0.4s;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-ms-transition: all 0.4s;
+-o-transition: all 0.4s;
+}
+
+
+
+.btn:hover{
+box-shadow: 0px 25px 18px -6px rgba(0, 0, 0,0.2);
+background-color: #63b2fc;
+color: #fff;
+}
+
+.price-box__wrap:hover .btn {
+  box-shadow: 0px 25px 18px -6px rgba(0, 0, 0,0.2);
+}
+
+.btn--revert{
+    background-color:transparent;
+    color: #8198ae;
+    box-shadow: none;
+    border:1px solid #c9d9e9;
+}
+
+.btn--revert:hover{
+    background-color:transparent;
+    color: #1f4568;
+    box-shadow: none;
+    border:1px solid #8198ae;
+}
+
+
+.btn--purple {
+    background-color: rgb(55, 0, 128);
+}
+
+.btn--purple:hover{
+    background-color: #b284f6;
+}
+
+.btn--violet {
+    background-color: #6f79ff;
+}
+.btn--violet:hover {
+    background-color: #878ef3;
+}
+
+.btn--blue {
+    background-color: #3a9fff;
+}
+.btn--blue:hover {
+    background-color: #63b2fc;
+}
+.btn--width{
+  width: 120px;
+}
+
+.price-box__btn {
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    margin-left: -55px;
+}
+
+.row__sub--light{
+  color: #aec0d2;
+}
+
+.row__carousel{
+  display:inline-block;
+  float:none;
+  border-radius: 6px;
+}
+.row--text-center{
+  text-align:center;
+
+}
+.carousel-control{
+  opacity:1;
+  background-image:none !important;
+}
+
+.carousel-control.left{
+  left:-100px;
+}
+
+.carousel-control.right{
+  right:-100px;
+}
+
+.carousel-inner{
+  margin-top: -25px;
+}
+.carousel-control__img{
+ position: absolute;
+top: 50%;
+margin-top: -90px;
+}
+
+.carousel-control.left .carousel-control__img{
+  left:0;
+}
+
+.carousel-control.right .carousel-control__img{
+  right:0;
+}
+
+.carousel-indicators li{
+  height:12px;
+  width:12px;
+    background-color: #fff;
+    border: 2px solid #8198ae;
+  margin-right:8px;
+}
+
+.carousel-indicators li.active{
+  height:14px;
+  width:14px ;
+    background-color: #fff;
+    border: 3px solid #6f79ff;
+  margin-right:10px;
+}
+.item {
+  text-align:left;
+  position:relative;
+  padding:25px 15px 0px 25px;
+}
+
+.item__content{
+padding: 40px;
+border-radius: 6px;
+box-shadow:  0 4px 8px 0px rgba(0,0,0,0.2);
+background-color: #fff;
+position: relative;
+  height: 305px;
+}
+.item__name{
+display: inline-block;
+font-size: 22px;
+vertical-align: middle;
+font-weight: 700;
+}
+.item__description {
+    margin-top: 35px;
+    color: #8198ae;
+    line-height: 23px;
+}
+.item__avatar{
+height: 45px;
+width: 45px;
+background-image: url("https://images.template.net/278151/Industrial-Aesthetic-Header-edit-online.jpg");
+background-size: cover;
+border-radius: 50%;
+margin: 50px auto 15px auto;
+
+}
+
+.carousel-indicators {
+    width: auto;
+    margin: 0;
+    right: 68px;
+    text-align: right;
+    top: 72px;
+  left: auto;
+  bottom: auto;
+}
+.item__content:after{
+content: "";
+width: 0;
+height: 0;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #fff;
+bottom: -20px;
+position: absolute;
+left: 50%;
+margin-left: -23px;
+filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
+}
+
+.item__people {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item__occupation {
+    font-size: 14px;
+    color: #8198ae;
+    text-align: center;
+}
+
+.site{
+  text-align: center;
+}
+.site__title{
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.site__subtitle{
+    font-size: 22px;
+    color: #8198ae;
+    margin: 15px 0 40px 0;
+    text-align: center;
+}
+
+.site__img{
+  margin-top: 50px;
+  display: inline-block;
+  width: 77%;
+}
+.site__box-link .btn--revert{
+  margin-left: 15px;
+}
+
+
+
+
+.marcella{
+  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+		gap:100px 50px;
+		padding: 100px 50px;
+
+}
+
+
+
+.container .card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 350px;
+	height: 309px;
+	border: radius 20px;
+	box-shadow: 0 35px 80px rgba(219, 205, 219, 0.94);
+	transition: .5s;
+}
+
+.container .card:hover {
+	height: 400px;
+}
+
+/* card geral */
+.container .card .caixaImg{
+	position: absolute;
+	top: 20px;
+  left: 20px;
+	width: 300px;
+	height: 220px;
+	border-radius: 12px;
+	overflow: hidden;
+transition: .5s;
+}
+
+/* card da imagem */
+.container .card .caixaImg img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: #654c7a;
+	object-fit: cover;
+}
+
+.container .card .conteudo {
+	position: absolute;
+	top: 250px;
+	width: 100%;
+	height: 35px;
+	overflow: hidden; 
+	text-align: center;
+	padding: 0 30px;
+	transition: .5s;
+  font-family: 'Times New Roman', Times, serif;
+  color: #330b53;
+}
+
+.container .card:hover .conteudo {
+	top: 200px;
+	height: 250px;
+	
+}
+
+
+.container .card:hover .caixaImg {
+	top: -100px;
+	scale: .75;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, .2) ;
+	height: 400px;
+}
+
+.container .card:hover .conteudo h2{
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 3rem;
+	color: var(--cor);
+}
+
+.container .card .conteudo p{
+	color: #050404;
+}
+
+.container .card .conteudo a{
+	display: inline-block;
+	margin-top: 15px;
+	background: var(--cor);
+	padding: 10px 10px;
+	text-decoration: none;
+	font-weight: 500;
+	border-radius: 8px; 
+	color: #fff;
+}
+
+
+.two{
+
+}

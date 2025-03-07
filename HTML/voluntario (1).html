@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../IMAGENS/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>VivaBem | Login Voluntário</title>
+  <style>
+    .input-container {
+      position: relative;
+      margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+      width: 100%;
+    }
+    .toggle-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+  background-color: #fff;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 770px;
+      min-height: 690px;
+      padding: 20px; /* Adicione padding para dar espaço interno */
+}
+
+.container p{   
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+.container button {
+    border-color: #333;
+    color: #512da8;
+    font-size: 15px;
+    padding: 10px 0; /* Ajuste o padding para ser mais responsivo */
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 40%; /* Faz o botão ocupar toda a largura */
+}
+
+@media (max-width: 768px) {
+    .container button {
+        padding: 10px 0; /* Ajuste no padding dos botões */
+        font-size: 14px; /* Ajuste no tamanho da fonte dos botões */
+    }
+}
+
+@media (max-width: 480px) {
+    .container button {
+        font-size: 12px; /* Tamanho da fonte menor em telas muito pequenas */
+    }
+}
+
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+  }
+  
+
+
+
+  
+  /* Toggle Animation */
+.container.active .sign-in {
+    transform: translateX(-100%);
+}
+
+
+.container.active .sign-up {
+    right: 0; /* Bring the sign-up form into view from the right */
+    opacity: 1;
+}
+  
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+  background-image: url('../IMAGENS/voluntario.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o container */
+    background-position: center; /* Centraliza a imagem */
+    height: 100%; /* Define a altura do container */
+    width: 200%; /* Define a largura do container */
+    color: #fff;
+    position: relative;
+    left: -100%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(13, 8, 16, 0.7);
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espaço para o ícone */
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container i {
+    position: absolute;
+    right: 10px; /* Alinhado à direita */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+section{
+    position: relative;
+    width: 400px;
+    height: 60px;
+}
+section input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border: 0;
+    outline: none;
+    background: #f1f1f1;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 #000;
+}
+#icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('../IMAGENS/show.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#icon.hide{
+    background: url('../IMAGENS/hide.png');
+    background-size: cover;
+}
+.security-tips {
+
+            background-color: #e9ddfa;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      width: 100%; /* Ajuste para largura total */
+        }
+        .security-tips p {
+            margin: 0 0 10px; /* Margem abaixo do parágrafo */
+        }
+        .security-tips ul {
+            padding-left: 20px; /* Espaçamento à esquerda da lista */
+            margin: 0; /* Remove margem padrão da lista */
+        }
+        .security-tips li {
+            margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+        }
+        @media (max-width: 600px) {
+            .security-tips {
+                padding: 15px; /* Menos preenchimento em telas menores */
+            }
+            .security-tips p, .security-tips li {
+                font-size: 14px; /* Tamanho de fonte menor em telas pequenas */
+            }
+        }
+
+                  
+   .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .form-row div {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .form-row div:last-child {
+        margin-right: 0;}
+
+        select {
+  background-color: #eee;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 8px 0;
+  outline: none;
+}
+
+.form-check {
+  transform: scale(0.8);
+  margin-right: 5px;
+}
+
+                  
+  </style>
+</head>
+<body>
+  
+<div class="container">
+  
+  <!-- Signup Form -->
+  <div class="form-container sign-up"> <br>
+    <form action="https://vivabem.serv00.net/projeto/site/cad_volun.php" method="POST">
+      <h1>Criar conta voluntário</h1><br>
+      <div class="form-row">
+      <div>
+        <input type="text" id="nome" name="nomes"  placeholder="Nome"  required>
+    </div>
+      <div>
+        <input type="text" id="sobrenome" name="sobrenome"  placeholder="Sobrenome">
+    </div>
+      </div>
+      <input type="email" placeholder="E-mail" name="usuario">
+      <div class="input-container">
+        <input type="password" placeholder="Senha" id="senha3" name="senha">
+        <i class="bi-eye-slash-fill toggle-icon" id="btn-cadastro" onclick="togglePassword('senha3', this)"></i>
+      </div>
+      <input type="date" placeholder="Data Nascimento" name="datax">
+      <select id="idades" name="idade">
+          <option value="">Selecione uma idade</option>
+<option value="18">18-24</option>
+<option value="25">25-40</option>
+<option value="41">41-64</option>
+<option value="65">+65</option>
+</select>
+
+<input type="tel" maxlength="15" onkeyup="handlePhone(event)"  placeholder="Telefone" name="telefone">
+<!--  
+      <div class="security-tips">
+        <p><strong>Dicas de segurança:</strong></p>
+         <ul> <li>Sua senha deve conter <strong>8 caracteres</strong> entre letras e números</li> 
+           <li>Sua senha <strong>não deve</strong> conter informações pessoais (E-mail, nome, data de nascimento)</li> 
+           <li><strong>Anote sua senha em um local seguro</strong>, você precisará dela para entrar outras vezes</li> </ul> 
+       </div>  -->
+      <button type="submit" class="registerBtn">Cadastrar</button>
+    </form>
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-container sign-in">
+    <form action="https://vivabem.serv00.net/projeto/site/login_volun.php" method="POST">
+      <h1>Entrar como voluntário</h1> <br>
+      <input type="email" placeholder="Email" name="usuario">
+      <div class="input-container">
+        <input type="password" name="senha" placeholder="Senha" id="senha2" name="senha">
+        <i class="bi-eye-slash-fill toggle-icon" id="btn-senha" onclick="togglePassword('senha2', this)"></i>
+      </div>
+      <button type="submit" class="loginBtn">Entrar</button><br>
+      <a href="../HTML/cadL_esqcsenha.html" style="    font-size: 16px;" >Esqueci minha senha</a>
+    </form>
+  </div>
+  
+  <!-- Toggle Container -->
+  <div class="toggle-container">
+    <div class="toggle">
+      <div class="toggle-panel toggle-left">
+        <h1>Entrar</h1>
+        <p>Insira seus dados pessoais para participar como voluntário</p>
+        <button class="login">Entrar</button>
+      </div>
+      <div class="toggle-panel toggle-right">
+        <h1>Criar conta</h1>
+        <p>Registre-se com seus dados pessoais para participar como voluntário</p>
+        <button class="register">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<style>
+  
+</style>
+
+<script>
+  // Selecionando elementos
+  let container = document.querySelector('.container');
+  let registerBtn = document.querySelector('.register');
+  let loginBtn = document.querySelector('.login');
+
+  // Adicionando eventos aos botões
+  registerBtn.addEventListener('click', function() {
+      container.classList.add('active');
+  });
+
+  loginBtn.addEventListener('click', function() {
+      container.classList.remove('active');
+  });
+
+  // Função para alternar visibilidade da senha
+  function togglePassword(inputId, icon) {
+    const input = document.getElementById(inputId);
+    const type = input.type === "password" ? "text" : "password";
+    input.type = type;
+    
+    icon.classList.toggle("bi-eye");
+    icon.classList.toggle("bi-eye-slash-fill");
+  }
+
+                        const handlePhone = (event) => {
+          let input = event.target
+          input.value = phoneMask(input.value)
+        }
+        
+        const phoneMask = (value) => {
+          if (!value) return ""
+          value = value.replace(/\D/g,'')
+          value = value.replace(/(\d{2})(\d)/,"($1) $2")
+          value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+          return value
+        }
+                    
+
+
+</script>
+
+</body>
+</html>
